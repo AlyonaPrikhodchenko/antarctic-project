@@ -1,0 +1,40 @@
+.header {
+  padding-top: 35px;
+  padding-bottom: 279px;
+  background-color: $color-background;
+  background-image: url("../img/background/intro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  @media (max-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 276px;
+    background-position: 50% 80%;
+  }
+}
+
+.header__menu {
+  display: flex;
+  margin-bottom: 198px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 215px;
+  }
+
+  @media (max-width: $tel) {
+    flex-direction: column;
+  }
+}
+
+.header__navigation {
+  margin-left: auto;
+  align-self: center;
+
+  @media (max-width: $tel) {
+    margin: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+}
