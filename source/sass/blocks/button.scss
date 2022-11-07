@@ -1,0 +1,21 @@
+.button {
+  padding: 15px;
+  background-color: $color-light-primary;
+  border: none;
+  cursor: pointer;
+
+  @include fontMontserrat(600, 14px, 21px, $color-dark-primary);
+
+  &:focus-visible {
+    outline: 1px solid $color-dark-primary;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
