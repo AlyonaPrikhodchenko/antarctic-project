@@ -1,0 +1,109 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  padding: 120px 0;
+
+  @media (max-width: $tablet) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $tel) {
+    flex-direction: column-reverse;
+    padding: 65px 0;
+  }
+}
+
+.contacts__map {
+  margin-right: 100px;
+
+  @media (max-width: $tablet) {
+    margin-right: 30px;
+  }
+
+  @media (max-width: $tel) {
+    margin-right: 0;
+  }
+}
+
+.contacts__content {
+  max-width: 500px;
+
+  @media (max-width: $tablet) {
+    max-width: 324px;
+  }
+
+  @media (max-width: $tel) {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__content p {
+  margin: 0;
+  margin-bottom: 45px;
+
+  @include fontMontserrat(500, 18px, 27px, $color-dark-primary);
+
+  @media (max-width: $tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__address {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 25px;
+
+  @include fontMontserrat(400, 16px, 24px, $color-dark-primary);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 22px;
+    background-image: url("../img/svg/pin.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.contacts__phone {
+  position: relative;
+  padding-left: 28px;
+  margin: 0;
+
+  @include fontMontserrat(400, 16px, 24px, $color-dark-primary);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/svg/tel.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-background;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

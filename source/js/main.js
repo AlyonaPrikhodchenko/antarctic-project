@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initBurgerMenu} from './modules/project/burger';
 import {initForm} from './modules/project/validation';
+import {openFrameMap} from './modules/project/map-open';
 
 // ---------------------------------
 
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initForm(form);
+  openFrameMap();
 
   // Modules
   // ---------------------------------

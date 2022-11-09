@@ -1,0 +1,54 @@
+.contacts-map {
+  position: relative;
+  width: 560px;
+
+  @media (max-width: $tablet) {
+    width: 324px;
+  }
+
+  @media (max-width: $tel) {
+    width: 100%;
+  }
+}
+
+.contacts-map__image-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 23.5%;
+    left: 44.5%;
+    width: 19px;
+    height: 22px;
+    background-image: url("../img/svg/pin.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--js {
+    display: none;
+  }
+}
+
+.contacts-map__image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.contacts-map__interactive {
+  display: block;
+  width: 100%;
+  height: 306px;
+  border: none;
+
+  &--nojs {
+    display: none;
+  }
+
+  @media (max-width: $tablet) {
+    height: 335px;
+  }
+}
