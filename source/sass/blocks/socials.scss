@@ -1,0 +1,24 @@
+.socials__list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 27px;
+
+  @media (max-width: $tablet) {
+    gap: 22px;
+  }
+}
+
+.socials__link {
+  &:focus-visible {
+    outline: 1px solid $color-background;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
