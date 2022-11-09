@@ -404,7 +404,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("/source/fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-display: swap;
 }
 
@@ -412,7 +412,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("/source/fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -639,7 +639,7 @@ button,
 }
 
 .button:focus-visible {
-  outline: 1px solid #011c40;
+  outline: 1px solid #a3cff9;
   outline-offset: 2px;
 }
 
@@ -1062,6 +1062,205 @@ button,
   margin-top: auto;
 }
 
+.booking {
+  padding: 50px 0;
+  background-color: #a3cff9;
+  background-image: url("../img/background/form.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.booking__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.booking__content {
+  width: 493px;
+  margin-right: 144px;
+}
+
+.booking__content h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 60px;
+  color: #011c40;
+}
+
+.booking__content p {
+  margin: 0;
+  width: 352px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 27px;
+  color: #011c40;
+}
+
+.form {
+  max-width: 410px;
+  padding: 50px;
+  background-color: #011c40;
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 27px;
+  color: #f9fbfd;
+}
+
+.form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.form input:not([type=checkbox]) {
+  width: 100%;
+  padding: 11px 16px;
+  border: none;
+  background-color: #f9fbfd;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: #011c40;
+}
+
+.form input:not([type=checkbox])::-webkit-input-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form input:not([type=checkbox])::-moz-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form input:not([type=checkbox]):-ms-input-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form input:not([type=checkbox])::-ms-input-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form input:not([type=checkbox])::placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form input:not([type=checkbox]):hover {
+  opacity: 0.8;
+}
+
+.form input:not([type=checkbox]):focus-visible {
+  outline: 1px solid #f9fbfd;
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+.form__checkbox input {
+  width: auto;
+}
+
+.form__checkbox span {
+  display: block;
+  padding-left: 13px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 13px;
+  color: #f9fbfd;
+}
+
+.form__checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form__checkbox-mark {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+}
+
+.form__checkbox-mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 8px;
+  background-image: url("../img/svg/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+.form__checkbox input:checked + .form__checkbox-mark::before {
+  display: block;
+}
+
+.form__checkbox input:focus-visible + .form__checkbox-mark {
+  outline: 1px solid #f9fbfd;
+  outline-offset: 2px;
+}
+
+.form__button {
+  width: 100%;
+}
+
 @media (max-width: 1023px) {
   .container {
     width: 88%;
@@ -1202,12 +1401,51 @@ button,
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .booking {
+    padding: 100px 0;
+  }
+
+  .booking__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .booking__content {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+
+  .booking__content h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 51px;
+    color: #011c40;
+  }
+
+  .booking__content p {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 27px;
+    color: #011c40;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
     min-width: 270px;
-    width: 84.38%;
+    width: 90.62%;
   }
 
   .header__menu {
@@ -1385,5 +1623,41 @@ button,
   .cruises__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .booking {
+    padding: 65px 0;
+  }
+
+  .booking__content {
+    margin-bottom: 40px;
+  }
+
+  .booking__content h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 31px;
+    color: #011c40;
+  }
+
+  .booking__content p {
+    width: 100%;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 22px;
+    color: #011c40;
+  }
+
+  .form {
+    padding: 40px 30px;
+  }
+
+  .form__title {
+    text-align: center;
+    line-height: 25px;
   }
 }

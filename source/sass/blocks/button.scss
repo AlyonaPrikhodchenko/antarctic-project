@@ -7,7 +7,7 @@
   @include fontMontserrat(600, 14px, 21px, $color-dark-primary);
 
   &:focus-visible {
-    outline: 1px solid $color-dark-primary;
+    outline: 1px solid $color-background;
     outline-offset: 2px;
   }
 

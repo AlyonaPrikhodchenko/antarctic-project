@@ -1,15 +1,17 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initBurgerMenu} from './modules/project/burger';
+import {initForm} from './modules/project/validation';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
+  const form = document.querySelector('.form');
   // Utils
   // ---------------------------------
 
   iosVhFix();
+  initForm(form);
 
   // Modules
   // ---------------------------------

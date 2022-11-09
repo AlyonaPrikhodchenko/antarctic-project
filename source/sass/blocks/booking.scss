@@ -1,0 +1,78 @@
+.booking {
+  padding: 50px 0;
+  background-color: $color-background;
+  background-image: url("../img/background/form.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $tel) {
+    padding: 65px 0;
+  }
+}
+
+.booking__container {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.booking__content {
+  width: 493px;
+  margin-right: 144px;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $tel) {
+    margin-bottom: 40px;
+  }
+}
+
+.booking__content h2 {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include fontMontserrat(700, 40px, 60px, $color-dark-primary);
+
+  @media (max-width: $tablet) {
+    margin-bottom: 25px;
+    text-align: center;
+
+    @include fontMontserrat(700, 34px, 51px, $color-dark-primary);
+  }
+
+  @media (max-width: $tel) {
+    @include fontMontserrat(700, 24px, 31px, $color-dark-primary);
+  }
+}
+
+.booking__content p {
+  margin: 0;
+  width: 352px;
+
+  @include fontMontserrat(400, 18px, 27px, $color-dark-primary);
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    text-align: center;
+
+    @include fontMontserrat(400, 18px, 27px, $color-dark-primary);
+  }
+
+  @media (max-width: $tel) {
+    width: 100%;
+
+    @include fontMontserrat(400, 16px, 22px, $color-dark-primary);
+  }
+}
