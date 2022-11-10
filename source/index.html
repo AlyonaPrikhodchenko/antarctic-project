@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Круизы антарктики.">
     <title>Круизы Антарктики</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -11,42 +11,38 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <section class="header__menu container">
-          <div class="header__logo logo">
-            <a class="logo__link">
-              <img class="logo__image" src="./img/content/logo.svg" width="70" height="38" alt="Логотип сайта.">
-            </a>
-          </div>
+        <div class="header__menu container">
+          <div class="header__menu-wrapper">
+            <div class="header__logo logo">
+              <a class="logo__link">
+                <svg class="logo__image" width="70" height="38">
+                  <use xlink:href="./img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
 
-          <nav class="header__navigation navigation">
-            <button class="navigation__button">
+            <button class="header__button header__button--nojs">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
-            <div class="navigation__container">
-              <div class="navigation__content">
-                <img class="navigation__logo" src="./img/content/logo-menu.svg" width="42px" height="22px" alt="Логотип.">
-                <button class="navigation__button-close">
-                  <span class="visually-hidden">Закрыть меню.</span>
-                </button>
+
+            <nav class="header__navigation navigation">
                 <ul class="navigation__list reset-list">
                   <li class="navigation__item">
-                    <a class="navigation__link" href="#">Преимущества</a>
+                    <a class="navigation__link" href="#advantages">Преимущества</a>
                   </li>
                   <li class="navigation__item">
-                    <a class="navigation__link" href="#">Направления</a>
+                    <a class="navigation__link" href="#booking">Направления</a>
                   </li>
                   <li class="navigation__item">
-                    <a class="navigation__link" href="#">Ближайшие круизы</a>
+                    <a class="navigation__link" href="#cruises">Ближайшие круизы</a>
                   </li>
                   <li class="navigation__item">
-                    <a class="navigation__link" href="#">Контакты</a>
+                    <a class="navigation__link" href="#contacts">Контакты</a>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </nav>
-
-        </section>
+            </nav>
+          </div>
+        </div>
 
         <section class="header__intro intro container">
           <div class="intro__wrapper">
@@ -71,7 +67,7 @@
           </div>
         </section>
 
-        <section class="main__advantages advantages">
+        <section class="main__advantages advantages" id="advantages">
           <div class="advantages__container container">
             <h2 class="advantages__title">Преимущества</h2>
             <ul class="advantages__list reset-list">
@@ -83,7 +79,7 @@
               </li>
               <li class="advantages__item">
                 <div class="advantages__wrapper advantages__wrapper--all">
-                  <h3 class="advantages__item-title">Система все включено</h3>
+                  <h3 class="advantages__item-title">Система <br> все включено</h3>
                   <p class="advantages__item-text">Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
                 </div>
               </li>
@@ -97,7 +93,7 @@
           </div>
         </section>
 
-        <section class="main__cruises cruises container">
+        <section class="main__cruises cruises container" id="cruises">
           <h2 class="cruises__title">Ближайшие круизы</h2>
           <ul class="cruises__list reset-list">
             <li class="cruises__item">
@@ -127,6 +123,12 @@
 
               <div class="cruises__intro cruises__intro--astoria">
                 <h3>Круиз "Астория"</h3>
+                <div class="cruises__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/astoria.webp 1x, ./img/content/astoria@2x.webp 2x">
+                    <img class="cruises__img" src="./img/content/astoria.jpg"  srcset="./img/content/astoria@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Астория.">
+                  </picture>
+                </div>
               </div>
             </li>
             <li class="cruises__item">
@@ -156,6 +158,12 @@
 
               <div class="cruises__intro cruises__intro--elayn">
                 <h3>Круиз "Элайн"</h3>
+                <div class="cruises__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/astoria.webp 1x, ./img/content/astoria@2x.webp 2x">
+                    <img class="cruises__img" src="./img/content/astoria.jpg"  srcset="./img/content/astoria@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Элайн.">
+                  </picture>
+                </div>
               </div>
             </li>
             <li class="cruises__item">
@@ -185,6 +193,12 @@
 
               <div class="cruises__intro cruises__intro--atlantis">
                 <h3>Круиз "Атлантис"</h3>
+                <div class="cruises__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/atlantis.webp 1x, ./img/content/atlantis@2x.webp 2x">
+                    <img class="cruises__img" src="./img/content/atlantis.jpg"  srcset="./img/content/atlantis@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Атлантис.">
+                  </picture>
+                </div>
               </div>
             </li>
             <li class="cruises__item">
@@ -214,6 +228,12 @@
 
               <div class="cruises__intro cruises__intro--odissey">
                 <h3>Круиз "Одиссей"</h3>
+                <div class="cruises__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/odissey.webp 1x, ./img/content/odissey@2x.webp 2x">
+                    <img class="cruises__img" src="./img/content/odissey.jpg"  srcset="./img/content/odissey@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Одиссей.">
+                  </picture>
+                </div>
               </div>
             </li>
             <li class="cruises__item">
@@ -243,6 +263,12 @@
 
               <div class="cruises__intro cruises__intro--olimpia">
                 <h3>Круиз "Олимпия"</h3>
+                <div class="cruises__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/olimpia.webp 1x, ./img/content/olimpia@2x.webp 2x">
+                    <img class="cruises__img" src="./img/content/olimpia.jpg"  srcset="./img/content/olimpia@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Олимпия.">
+                  </picture>
+                </div>
               </div>
             </li>
             <li class="cruises__item">
@@ -272,6 +298,12 @@
 
               <div class="cruises__intro cruises__intro--avrora">
                 <h3>Круиз "Аврора"</h3>
+                <div class="cruises__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/avrora.webp 1x, ./img/content/avrora@2x.webp 2x">
+                    <img class="cruises__img" src="./img/content/avrora.jpg"  srcset="./img/content/avrora@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Аврора.">
+                  </picture>
+                </div>
               </div>
             </li>
             <li class="cruises__item">
@@ -301,6 +333,12 @@
 
               <div class="cruises__intro cruises__intro--leonor">
                 <h3>Круиз "Леонор"</h3>
+                <div class="cruises__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/leonor.webp 1x, ./img/content/leonor@2x.webp 2x">
+                    <img class="cruises__img" src="./img/content/leonor.jpg"  srcset="./img/content/leonor@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Леонор.">
+                  </picture>
+                </div>
               </div>
             </li>
             <li class="cruises__item">
@@ -329,13 +367,19 @@
               </div>
 
               <div class="cruises__intro cruises__intro--minion">
-                <h3>Круиз "Минион-1"</h3>
+                <h3>Круиз "Минион - 1"</h3>
+                <div class="cruises__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/content/minion.webp 1x, ./img/content/minion@2x.webp 2x">
+                    <img class="cruises__img" src="./img/content/minion.jpg"  srcset="./img/content/minion@2x.jpg 2x" width="260" height="386" loading="lazy" alt="Круиз Минион-1.">
+                  </picture>
+                </div>
               </div>
             </li>
           </ul>
         </section>
 
-        <section class="main__booking booking">
+        <section class="main__booking booking" id="booking">
           <div class="booking__container container">
             <div class="booking__content">
               <h2>Раннее бронирование</h2>
@@ -374,7 +418,7 @@
           </div>
         </section>
 
-        <section class="main__contacts contacts container">
+        <section class="main__contacts contacts container" id="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__map contacts-map">
             <div class="contacts-map__image-wrapper">
@@ -425,21 +469,21 @@
             <ul class="socials__list reset-list">
               <li class="socials__item">
                 <a class="socials__link" href="#" target="_blank">
-                  <svg width="10" height="16">
+                  <svg width="12" height="20">
                     <use xlink:href="./img/sprite.svg#ok"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="#" target="_blank">
-                  <svg width="17" height="16">
+                  <svg width="20" height="20">
                     <use xlink:href="./img/sprite.svg#dzen"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="#" target="_blank">
-                  <svg width="17" height="16">
+                  <svg width="20" height="20">
                     <use xlink:href="./img/sprite.svg#reddit"></use>
                   </svg>
                 </a>
@@ -449,8 +493,6 @@
         </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

@@ -35,6 +35,8 @@
   }
 
   @media (max-width: $tel) {
+    width: 230px;
+
     @include fontMontserrat(400, 16px, 22px, $color-light-primary);
   }
 }

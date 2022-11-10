@@ -7,36 +7,40 @@
   @media (max-width: $tablet) {
     grid-template-columns: 324px 1fr;
     gap: 25px;
-    padding: 100px 0;
+    padding: 100px 0 92px;
   }
 
   @media (max-width: $tel) {
     grid-template-columns: 1fr;
-    gap: 50px;
-    padding: 65px 0 85px;
+    gap: 40px;
+    padding: 58px 0 85px;
   }
 }
 
 .travell__content {
-  @media (max-width: $tel) {
-    margin-bottom: 50px;
+  margin-top: 56px;
+
+  @media (max-width: $tablet) {
+    margin-top: 0;
   }
 }
 
 .travell__content h2 {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 
   @include fontMontserrat(600, 28px, 42px, $color-dark-primary);
 
   @media (max-width: $tablet) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-right: 22px;
 
-    @include fontMontserrat(600, 26px, 36px, $color-dark-primary);
+    @include fontMontserrat(600, 26px, 30px, $color-dark-primary);
   }
 
   @media (max-width: $tel) {
+    margin-bottom: 18px;
+
     @include fontMontserrat(600, 24px, 33px, $color-dark-primary);
   }
 }
@@ -48,6 +52,8 @@
 }
 
 .travell__img {
+  display: block;
+
   @media (max-width: $tablet) {
     width: 324px;
   }

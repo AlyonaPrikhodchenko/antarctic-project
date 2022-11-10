@@ -1,22 +1,30 @@
 const initBurgerMenu = () => {
-  const burger = document.querySelector('.navigation__button');
-  // const burgerClose = document.querySelector('.navigation__button-close');
-  const mobileMenu = document.querySelector('.navigation__container');
-  // const mobileContent = document.querySelector('.navigation__content');
-  // const mobileLogo = document.querySelector('.navigation__logo');
+  const burger = document.querySelector('.header__button');
+  const navigation = document.querySelector('.navigation');
+  const mobileMenu = document.querySelector('.header__menu');
+  const mobileContent = document.querySelector('.header__menu-wrapper');
+  const mobileLogo = document.querySelector('.logo__image');
 
   if (burger) {
-    burger.classList.add('navigation__button--js');
-    mobileMenu.classList.add('navigation__container--js');
+    burger.classList.remove('header__button--nojs');
+    navigation.classList.add('navigation--js');
+
+    burger.addEventListener('click', () => {
+      if (!burger.classList.contains('header__button--close')) {
+        burger.classList.add('header__button--close');
+        mobileMenu.classList.add('header__menu--js');
+        mobileContent.classList.add('header__menu-wrapper--js');
+        mobileLogo.classList.add('logo__image--js');
+        navigation.classList.remove('navigation--js');
+      } else {
+        burger.classList.remove('header__button--close');
+        mobileMenu.classList.remove('header__menu--js');
+        mobileContent.classList.remove('header__menu-wrapper--js');
+        mobileLogo.classList.remove('logo__image--js');
+        navigation.classList.add('navigation--js');
+      }
+    });
   }
-
-  // if (burger && burgerClose && mobileMenu && mobileLogo && mobileContent) {
-
-  //   burgerClose.classList.add('navigation__button-close--js');
-  //
-  //   mobileLogo.classList.add('navigation__logo--js');
-  //   mobileContent.classList.add('navigation__content--js');
-  // }
 };
 
 export {initBurgerMenu};

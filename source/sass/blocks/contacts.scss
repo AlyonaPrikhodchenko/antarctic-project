@@ -1,6 +1,5 @@
 .contacts {
   display: flex;
-  align-items: center;
   padding: 120px 0;
 
   @media (max-width: $tablet) {
@@ -9,7 +8,7 @@
 
   @media (max-width: $tel) {
     flex-direction: column-reverse;
-    padding: 65px 0;
+    padding: 60px 0 43px;
   }
 }
 
@@ -26,6 +25,7 @@
 }
 
 .contacts__content {
+  margin-top: 75px;
   max-width: 500px;
 
   @media (max-width: $tablet) {
@@ -35,24 +35,29 @@
   @media (max-width: $tel) {
     max-width: 100%;
     margin-bottom: 40px;
+    margin-top: 0;
   }
 }
 
 .contacts__content p {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
 
   @include fontMontserrat(500, 18px, 27px, $color-dark-primary);
 
   @media (max-width: $tablet) {
     margin-bottom: 40px;
   }
+
+  @media (max-width: $tel) {
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__address {
   position: relative;
   padding-left: 28px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   @include fontMontserrat(400, 16px, 24px, $color-dark-primary);
 
@@ -72,10 +77,15 @@
   @media (max-width: $tablet) {
     margin-bottom: 30px;
   }
+
+  @media (max-width: $tel) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__phone {
   position: relative;
+  display: block;
   padding-left: 28px;
   margin: 0;
 
@@ -106,4 +116,9 @@
   &:active {
     opacity: 0.5;
   }
+}
+
+.contacts-map__image {
+  width: 100%;
+  max-height: 305px;
 }

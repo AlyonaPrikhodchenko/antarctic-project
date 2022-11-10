@@ -1,5 +1,5 @@
 .footer {
-  padding: 50px 0;
+  padding: 50px 0 40px;
   background-color: $color-dark-primary;
 
   @media (max-width: $tel) {
@@ -25,7 +25,7 @@
   @media (max-width: $tel) {
     flex-direction: column;
     align-items: start;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -53,6 +53,7 @@
 
   @media (max-width: $tel) {
     grid-template-columns: 1fr;
+    gap: 17px;
   }
 }
 

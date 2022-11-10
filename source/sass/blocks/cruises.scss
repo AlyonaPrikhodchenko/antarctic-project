@@ -1,42 +1,50 @@
 .cruises {
-  padding: 95px 0 120px;
+  padding: 85px 0 120px;
 
   @media (max-width: $tablet) {
-    padding: 100px 0;
+    padding: 90px 0;
   }
 
   @media (max-width: $tel) {
-    padding: 65px 0;
+    padding: 56px 0 65px;
   }
 }
 
 .cruises__title {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 48px;
   text-align: center;
 
   @include fontMontserrat(600, 28px, 42px, $color-dark-primary);
 
 
   @media (max-width: $tablet) {
+    margin-bottom: 49px;
+
     @include fontMontserrat(600, 26px, 39px, $color-dark-primary);
   }
 
   @media (max-width: $tel) {
+    margin-bottom: 30px;
+
     @include fontMontserrat(600, 24px, 36px, $color-dark-primary);
   }
 }
 
 .cruises__list {
+  width: 97.41%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 
   @media (max-width: $tablet) {
+    width: 96%;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: $tel) {
+    width: 93%;
     grid-template-columns: 1fr;
   }
 }
@@ -45,32 +53,55 @@
   position: relative;
 }
 
+.cruises__item:focus-within > .cruises__intro {
+  display: none;
+}
+
+.cruises__item:hover > .cruises__intro {
+  display: none;
+}
+
 .cruises__content {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 35px 25px;
+  padding: 30px 23px 32px 25px;
   background-color: $color-dark-primary;
+
+  @media (max-width: $tablet) {
+    padding: 28px 35px 34px 35px;
+  }
+
+  @media (max-width: $tel) {
+    padding: 28px 26px 34px 24px;
+  }
 }
 
 .cruises__content h3 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 
   @include fontMontserrat(500, 18px, 27px, $color-light-primary);
 }
 
 .cruises__description {
   margin: 0;
-  margin-bottom: 10px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 11px;
+  }
 }
 
 .cruises__description-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 12px;
+  }
 }
 
 .cruises__description-wrapper dt {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 
   @include fontMontserrat(500, 14px, 19px, $color-light-primary);
 }
@@ -81,65 +112,60 @@
   @include fontMontserrat(500, 14px, 19px, $color-term);
 }
 
-.cruises__item:hover > .cruises__intro {
-  display: none;
+.cruises__button {
+  display: block;
+  text-align: center;
+  margin-top: auto;
+  padding: 10px;
 }
 
 .cruises__intro {
   display: flex;
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  &--astoria {
-    background-image: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-dark-primary 100%), url("../img/content/astoria.jpg");
-  }
-
-  &--elayn {
-    background-image: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-dark-primary 100%), url("../img/content/astoria.jpg");
-  }
-
-  &--atlantis {
-    background-image: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-dark-primary 100%), url("../img/content/atlantis.jpg");
-  }
-
-  &--odissey {
-    background-image: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-dark-primary 100%), url("../img/content/odissey.jpg");
-  }
-
-  &--olimpia {
-    background-image: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-dark-primary 100%), url("../img/content/olimpia.jpg");
-  }
-
-  &--avrora {
-    background-image: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-dark-primary 100%), url("../img/content/avrora.jpg");
-  }
-
-  &--leonor {
-    background-image: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-dark-primary 100%), url("../img/content/leonor.jpg");
-  }
-
-  &--minion {
-    background-image: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-dark-primary 100%), url("../img/content/minion.jpg");
-  }
 }
 
 .cruises__intro h3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
   margin: 0;
-  margin-top: auto;
-  padding: 30px;
+  padding: 20px 30px;
 
   @include fontMontserrat(500, 18px, 27px, $color-light-primary);
+
+  @media (max-width: $tablet) {
+    padding: 25px 35px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 18px 25px;
+  }
 }
 
-.cruises__button {
-  display: block;
-  text-align: center;
-  margin-top: auto;
+.cruises__image {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color-dark-primary 100%);
+  }
+}
+
+.cruises__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 

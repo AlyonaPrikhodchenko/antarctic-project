@@ -1,20 +1,21 @@
 .form {
-  max-width: 410px;
-  padding: 50px;
+  max-width: 403px;
+  padding: 45px 50px 50px;
   background-color: $color-dark-primary;
 
   @media (max-width: $tel) {
-    padding: 40px 30px;
+    padding: 35px 30px 40px;
   }
 }
 
 .form__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 
   @include fontMontserrat(500, 18px, 27px, $color-light-primary);
 
   @media (max-width: $tel) {
+    margin-bottom: 30px;
     text-align: center;
     line-height: 25px;
   }
@@ -55,10 +56,17 @@
 
 .form__checkbox span {
   display: block;
-  padding-left: 13px;
+  padding-left: 5px;
   margin-bottom: 30px;
 
   @include fontMontserrat(400, 10px, 13px, $color-light-primary);
+
+  @media (max-width: $tel) {
+    padding-left: 10px;
+    margin-bottom: 25px;
+
+    @include fontMontserrat(400, 9px, 12px, $color-light-primary);
+  }
 }
 
 .form__checkbox label {
@@ -71,6 +79,7 @@
   width: 18px;
   height: 18px;
   background-color: $color-light-primary;
+  flex-shrink: 0;
 
   &::before {
     content: "";
@@ -98,4 +107,5 @@
 
 .form__button {
   width: 100%;
+  padding: 11px;
 }

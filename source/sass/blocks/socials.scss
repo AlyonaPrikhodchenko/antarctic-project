@@ -6,9 +6,16 @@
   @media (max-width: $tablet) {
     gap: 22px;
   }
+
+  @media (max-width: $tel) {
+    gap: 18px;
+  }
 }
 
 .socials__link {
+  display: block;
+  padding: 10px 0;
+
   &:focus-visible {
     outline: 1px solid $color-background;
     outline-offset: 2px;
@@ -20,5 +27,17 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  @media (max-width: $tel) {
+    padding: 5px 0;
+  }
+}
+
+
+.socials__link > svg {
+  @media (max-width: $tel) {
+    width: 17px;
+    height: 16px;
   }
 }

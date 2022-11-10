@@ -1,7 +1,7 @@
 .advantages {
   position: relative;
   z-index: 0;
-  padding: 120px 0;
+  padding: 110px 0 120px;
   background-color: #e3ecf6;
 
   &::before {
@@ -19,11 +19,11 @@
   }
 
   @media (max-width: $tablet) {
-    padding: 100px 0;
+    padding: 90px 0 100px;
   }
 
   @media (max-width: $tel) {
-    padding: 65px 0;
+    padding: 60px 0 65px;
   }
 }
 
@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 
   @include fontMontserrat(600, 28px, 42px, $color-dark-primary);
 
@@ -40,6 +40,8 @@
   }
 
   @media (max-width: $tel) {
+    margin-bottom: 28px;
+
     @include fontMontserrat(600, 24px, 36px, $color-dark-primary);
   }
 }
@@ -63,13 +65,17 @@
   background-color: $color-light-primary;
 
   @media (max-width: $tablet) {
-    padding: 25px 15px 25px 20px;
+    padding: 25px 10px 27px 20px;
+  }
+
+  @media (max-width: $tel) {
+    padding: 25px 10px 25px 20px;
   }
 }
 
 .advantages__wrapper {
   position: relative;
-  padding-top: 57px;
+  padding-top: 50px;
 
   &--liner::before {
     content: "";
@@ -126,19 +132,15 @@
   }
 
   @media (max-width: $tablet) {
-    padding-top: 50px;
+    padding-top: 45px;
   }
 }
 
 .advantages__item-title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @include fontMontserrat(500, 18px, 25px, $color-dark-primary);
-
-  @media (max-width: $tablet) {
-    padding-right: 35px;
-  }
 }
 
 .advantages__item-text {
