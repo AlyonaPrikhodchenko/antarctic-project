@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Круизы антарктики.">
     <title>Круизы Антарктики</title>
+    <link rel="preload" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -445,7 +449,9 @@
           <div class="footer__nav">
             <div class="footer__nav-logo logo">
               <a class="logo__link">
-                <img class="logo__image" src="./img/content/logo.svg" width="70" height="38" alt="Логотип сайта.">
+                <svg class="logo__image" width="70" height="38">
+                  <use xlink:href="./img/sprite.svg#logo"></use>
+                </svg>
               </a>
             </div>
 
