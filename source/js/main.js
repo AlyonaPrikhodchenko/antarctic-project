@@ -12,7 +12,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  initForm(form);
+  if (form) {
+    initForm(form);
+  }
   openFrameMap();
 
   // Modules
