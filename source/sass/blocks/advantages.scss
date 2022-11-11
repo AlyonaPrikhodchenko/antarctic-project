@@ -16,6 +16,10 @@
     background-size: cover;
     background-position: center;
     opacity: 0.1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/advantages@2x.jpg");
+    }
   }
 
   @media (max-width: $tablet) {

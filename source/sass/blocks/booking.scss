@@ -6,6 +6,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/form@2x.jpg");
+  }
+
   @media (max-width: $tablet) {
     padding: 100px 0;
   }

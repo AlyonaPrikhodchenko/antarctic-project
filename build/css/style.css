@@ -1751,10 +1751,11 @@ button,
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 100;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 43, 102, 0.5);
-    overflow: hidden;
+    overflow: auto;
   }
 
   .header__menu-wrapper {
@@ -1767,7 +1768,7 @@ button,
     padding-top: 20px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 100vh;
+    padding-bottom: 100%;
     background-color: #f9fbfd;
   }
 
@@ -2047,5 +2048,19 @@ button,
   .socials__link > svg {
     width: 17px;
     height: 16px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .header {
+    background-image: url("../img/background/intro@2x.jpg");
+  }
+
+  .advantages::before {
+    background-image: url("../img/background/advantages@2x.jpg");
+  }
+
+  .booking {
+    background-image: url("../img/background/form@2x.jpg");
   }
 }
