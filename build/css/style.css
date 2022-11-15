@@ -640,7 +640,7 @@ button,
 }
 
 .button:focus-visible {
-  outline: 1px solid #a3cff9;
+  outline: 1px solid #bde0fb;
   outline-offset: 2px;
 }
 
@@ -655,7 +655,7 @@ button,
 .header {
   padding-top: 35px;
   padding-bottom: 279px;
-  background-color: #a3cff9;
+  background-color: #003368;
   background-image: url("../img/background/intro.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -832,7 +832,7 @@ button,
 }
 
 .advantages__item {
-  padding: 30px 30px 50px 30px;
+  padding: 30px 30px 48px 30px;
   background-color: #f9fbfd;
 }
 
@@ -882,13 +882,17 @@ button,
 
 .advantages__item-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
   line-height: 25px;
   color: #011c40;
+}
+
+.advantages__item-title > br {
+  display: none;
 }
 
 .advantages__item-text {
@@ -929,6 +933,7 @@ button,
 
 .cruises__item {
   position: relative;
+  height: 386px;
 }
 
 .cruises__item:focus-within > .cruises__intro {
@@ -965,6 +970,7 @@ button,
 
 .cruises__description {
   margin: 0;
+  overflow: auto;
 }
 
 .cruises__description-wrapper {
@@ -1045,13 +1051,13 @@ button,
 .cruises__img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .booking {
   padding: 50px 0;
-  background-color: #a3cff9;
+  background-color: #bde0fb;
   background-image: url("../img/background/form.jpg");
   background-position: 0 0;
   background-size: cover;
@@ -1218,6 +1224,7 @@ button,
   background-color: #f9fbfd;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .form__checkbox-mark::before {
@@ -1304,7 +1311,8 @@ button,
 
 .contacts__phone {
   position: relative;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   padding-left: 28px;
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1329,7 +1337,7 @@ button,
 }
 
 .contacts__phone:focus-visible {
-  outline: 1px solid #a3cff9;
+  outline: 1px solid #003368;
   outline-offset: 2px;
 }
 
@@ -1439,7 +1447,7 @@ button,
 }
 
 .footer__nav-link:focus-visible {
-  outline: 1px solid #a3cff9;
+  outline: 1px solid #003368;
   outline-offset: 2px;
 }
 
@@ -1456,7 +1464,9 @@ button,
   display: grid;
   -ms-grid-columns: (auto)[3];
   grid-template-columns: repeat(3, auto);
-  gap: 27px;
+  -webkit-column-gap: 27px;
+  -moz-column-gap: 27px;
+  column-gap: 27px;
 }
 
 .socials__link {
@@ -1465,7 +1475,7 @@ button,
 }
 
 .socials__link:focus-visible {
-  outline: 1px solid #a3cff9;
+  outline: 1px solid #003368;
   outline-offset: 2px;
 }
 
@@ -1484,8 +1494,10 @@ button,
 
   .header {
     padding-top: 30px;
-    padding-bottom: 277px;
+    padding-bottom: 275px;
     background-position: 50% 80%;
+    -webkit-filter: none;
+    filter: none;
   }
 
   .header__menu-wrapper {
@@ -1502,6 +1514,7 @@ button,
   }
 
   .intro__wrapper h1 {
+    margin-bottom: 12px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 50px;
     font-weight: 700;
@@ -1578,7 +1591,7 @@ button,
   }
 
   .advantages__item {
-    padding: 25px 10px 27px 20px;
+    padding: 25px 10px 24px 20px;
   }
 
   .advantages__wrapper--liner::before {
@@ -1600,8 +1613,12 @@ button,
     padding-top: 45px;
   }
 
+  .advantages__item-title > br {
+    display: inline;
+  }
+
   .cruises {
-    padding: 90px 0;
+    padding: 90px 0 101px;
   }
 
   .cruises__title {
@@ -1636,12 +1653,8 @@ button,
     padding: 25px 35px;
   }
 
-  .cruises__intro h3 {
-    padding: 18px 25px;
-  }
-
   .booking {
-    padding: 100px 0;
+    padding: 90px 0 101px;
   }
 
   .booking__container {
@@ -1659,11 +1672,11 @@ button,
     margin-top: 0;
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .booking__content h2 {
-    margin-bottom: 25px;
+    margin-bottom: 4px;
     text-align: center;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 34px;
@@ -1693,15 +1706,16 @@ button,
   }
 
   .contacts__content {
+    margin-top: 65px;
     max-width: 324px;
   }
 
   .contacts__content p {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .contacts__address {
-    margin-bottom: 30px;
+    margin-bottom: 19px;
   }
 
   .contacts-map {
@@ -1710,6 +1724,10 @@ button,
 
   .contacts-map__interactive {
     height: 335px;
+  }
+
+  .footer {
+    padding: 50px 0;
   }
 
   .footer__nav-logo {
@@ -1730,7 +1748,18 @@ button,
   }
 
   .socials__list {
-    gap: 22px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .socials__link {
+    padding: 0;
+  }
+
+  .socials__link > svg {
+    width: 17px;
+    height: 16px;
   }
 }
 
@@ -1766,9 +1795,9 @@ button,
     margin-left: auto;
     width: 89%;
     padding-top: 20px;
-    padding-right: 15px;
+    padding-right: 10px;
     padding-left: 15px;
-    padding-bottom: 100%;
+    padding-bottom: 100vh;
     background-color: #f9fbfd;
   }
 
@@ -1799,7 +1828,7 @@ button,
 
   .header__navigation {
     margin: 0;
-    margin-top: 15px;
+    margin-top: 33px;
     width: 100%;
   }
 
@@ -1875,11 +1904,11 @@ button,
   }
 
   .advantages {
-    padding: 60px 0 65px;
+    padding: 55px 0 65px;
   }
 
   .advantages__title {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -1894,7 +1923,7 @@ button,
   }
 
   .advantages__item {
-    padding: 25px 10px 25px 20px;
+    padding: 25px 10px 23px 20px;
   }
 
   .cruises {
@@ -1919,6 +1948,10 @@ button,
 
   .cruises__content {
     padding: 28px 26px 34px 24px;
+  }
+
+  .cruises__intro h3 {
+    padding: 18px 25px;
   }
 
   .booking {
@@ -2023,7 +2056,7 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .footer__nav-logo {
@@ -2038,16 +2071,9 @@ button,
   }
 
   .socials__list {
-    gap: 18px;
-  }
-
-  .socials__link {
-    padding: 5px 0;
-  }
-
-  .socials__link > svg {
-    width: 17px;
-    height: 16px;
+    -webkit-column-gap: 17px;
+    -moz-column-gap: 17px;
+    column-gap: 17px;
   }
 }
 

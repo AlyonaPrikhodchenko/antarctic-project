@@ -1,6 +1,6 @@
 .booking {
   padding: 50px 0;
-  background-color: $color-background;
+  background-color: $color-background-form;
   background-image: url("../img/background/form.jpg");
   background-position: 0 0;
   background-size: cover;
@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $tablet) {
-    padding: 100px 0;
+    padding: 90px 0 101px;
   }
 
   @media (max-width: $tel) {
@@ -39,7 +39,7 @@
     margin-top: 0;
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: $tel) {
@@ -54,7 +54,7 @@
   @include fontMontserrat(700, 40px, 60px, $color-dark-primary);
 
   @media (max-width: $tablet) {
-    margin-bottom: 25px;
+    margin-bottom: 4px;
     text-align: center;
 
     @include fontMontserrat(700, 34px, 51px, $color-dark-primary);

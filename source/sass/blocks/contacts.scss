@@ -29,6 +29,7 @@
   max-width: 500px;
 
   @media (max-width: $tablet) {
+    margin-top: 65px;
     max-width: 324px;
   }
 
@@ -46,7 +47,7 @@
   @include fontMontserrat(500, 18px, 27px, $color-dark-primary);
 
   @media (max-width: $tablet) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $tel) {
@@ -75,7 +76,7 @@
   }
 
   @media (max-width: $tablet) {
-    margin-bottom: 30px;
+    margin-bottom: 19px;
   }
 
   @media (max-width: $tel) {
@@ -85,7 +86,8 @@
 
 .contacts__phone {
   position: relative;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   padding-left: 28px;
   margin: 0;
 

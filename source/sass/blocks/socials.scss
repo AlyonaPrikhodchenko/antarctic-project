@@ -1,14 +1,14 @@
 .socials__list {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 27px;
+  column-gap: 27px;
 
   @media (max-width: $tablet) {
-    gap: 22px;
+    column-gap: 20px;
   }
 
   @media (max-width: $tel) {
-    gap: 18px;
+    column-gap: 17px;
   }
 }
 
@@ -29,14 +29,14 @@
     opacity: 0.5;
   }
 
-  @media (max-width: $tel) {
-    padding: 5px 0;
+  @media (max-width: $tablet) {
+    padding: 0;
   }
 }
 
 
 .socials__link > svg {
-  @media (max-width: $tel) {
+  @media (max-width: $tablet) {
     width: 17px;
     height: 16px;
   }

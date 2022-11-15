@@ -14,6 +14,8 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   @media (max-width: $tablet) {
+    margin-bottom: 12px;
+
     @include fontMontserrat(700, 50px, 61px, $color-light-primary);
     text-shadow: none;
   }

@@ -14,8 +14,9 @@
 
   @media (max-width: $tablet) {
     padding-top: 30px;
-    padding-bottom: 277px;
+    padding-bottom: 275px;
     background-position: 50% 80%;
+    filter: none;
   }
 
   @media (max-width: $tel) {
@@ -57,9 +58,9 @@
       margin-left: auto;
       width: 89%;
       padding-top: 20px;
-      padding-right: 15px;
+      padding-right: 10px;
       padding-left: 15px;
-      padding-bottom: 100%;
+      padding-bottom: 100vh;
       background-color: $color-light-primary;
     }
   }
@@ -96,7 +97,7 @@
 
   @media (max-width: $tel) {
     margin: 0;
-    margin-top: 15px;
+    margin-top: 33px;
     width: 100%;
   }
 }

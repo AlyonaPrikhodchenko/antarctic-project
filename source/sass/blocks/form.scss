@@ -80,6 +80,7 @@
   height: 18px;
   background-color: $color-light-primary;
   flex-shrink: 0;
+  cursor: pointer;
 
   &::before {
     content: "";
