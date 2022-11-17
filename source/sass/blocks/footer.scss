@@ -13,7 +13,6 @@
 
 .footer__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
   @media (max-width: $tel) {
@@ -24,7 +23,6 @@
 
 .footer__nav {
   display: flex;
-  align-items: center;
 
   @media (max-width: $tel) {
     flex-direction: column;
@@ -50,12 +48,15 @@
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 33px;
+  margin-top: 8px;
 
   @media (max-width: $tablet) {
     gap: 23px;
+    margin-top: 4px;
   }
 
   @media (max-width: $tel) {
+    margin-top: 0;
     grid-template-columns: 1fr;
     gap: 17px;
   }

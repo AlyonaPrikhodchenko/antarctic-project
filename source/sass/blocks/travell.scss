@@ -32,13 +32,15 @@
   @include fontMontserrat(600, 28px, 42px, $color-dark-primary);
 
   @media (max-width: $tablet) {
-    margin-bottom: 20px;
+    margin-top: -8px;
+    margin-bottom: 18px;
     margin-right: 22px;
 
-    @include fontMontserrat(600, 26px, 30px, $color-dark-primary);
+    @include fontMontserrat(600, 26px, 35px, $color-dark-primary);
   }
 
   @media (max-width: $tel) {
+    margin-top: 0;
     margin-bottom: 18px;
 
     @include fontMontserrat(600, 24px, 33px, $color-dark-primary);

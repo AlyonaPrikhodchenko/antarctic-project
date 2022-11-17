@@ -1215,6 +1215,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .form__checkbox-mark {
@@ -1407,9 +1408,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1419,9 +1417,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .footer__nav-logo {
@@ -1434,6 +1429,7 @@ button,
   -ms-grid-columns: (auto)[4];
   grid-template-columns: repeat(4, auto);
   gap: 33px;
+  margin-top: 8px;
 }
 
 .footer__nav-link {
@@ -1559,13 +1555,14 @@ button,
   }
 
   .travell__content h2 {
-    margin-bottom: 20px;
+    margin-top: -8px;
+    margin-bottom: 18px;
     margin-right: 22px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 26px;
     font-weight: 600;
     font-style: normal;
-    line-height: 30px;
+    line-height: 35px;
     color: #011c40;
   }
 
@@ -1633,8 +1630,11 @@ button,
 
   .cruises__list {
     width: 96%;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (309px)[2];
+    grid-template-columns: repeat(2, 309px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .cruises__content {
@@ -1736,6 +1736,7 @@ button,
 
   .footer__nav-list {
     gap: 23px;
+    margin-top: 4px;
   }
 
   .footer__nav-link {
@@ -1782,9 +1783,19 @@ button,
     bottom: 0;
     z-index: 100;
     width: 100%;
-    height: 100vh;
     background-color: rgba(0, 43, 102, 0.5);
     overflow: auto;
+  }
+
+  .header__menu--js::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 101;
+    height: 100vh;
+    width: 89%;
+    background-color: #f9fbfd;
   }
 
   .header__menu-wrapper {
@@ -1792,12 +1803,14 @@ button,
   }
 
   .header__menu-wrapper--js {
+    position: relative;
+    z-index: 102;
+    margin-bottom: 0;
     margin-left: auto;
     width: 89%;
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 15px;
-    padding-bottom: 100vh;
     background-color: #f9fbfd;
   }
 
@@ -1889,6 +1902,7 @@ button,
   }
 
   .travell__content h2 {
+    margin-top: 0;
     margin-bottom: 18px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 24px;
@@ -1942,8 +1956,11 @@ button,
 
   .cruises__list {
     width: 93%;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 270px;
+    grid-template-columns: 270px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .cruises__content {
@@ -2065,6 +2082,7 @@ button,
   }
 
   .footer__nav-list {
+    margin-top: 0;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 17px;
