@@ -926,14 +926,15 @@ button,
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (minmax(100px, 1fr))[4];
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
   gap: 30px;
 }
 
 .cruises__item {
   position: relative;
-  height: 386px;
+  height: 28.25vw;
+  max-height: 386px;
 }
 
 .cruises__item:focus-within > .cruises__intro {
@@ -1051,8 +1052,8 @@ button,
 .cruises__img {
   width: 100%;
   height: 100%;
-  -o-object-fit: fill;
-  object-fit: fill;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .booking {
@@ -1630,11 +1631,16 @@ button,
 
   .cruises__list {
     width: 96%;
-    -ms-grid-columns: (309px)[2];
-    grid-template-columns: repeat(2, 309px);
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .cruises__item {
+    height: 50.26vw;
+    max-height: 50.26vw;
   }
 
   .cruises__content {
@@ -1956,11 +1962,16 @@ button,
 
   .cruises__list {
     width: 93%;
-    -ms-grid-columns: 270px;
-    grid-template-columns: 270px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .cruises__item {
+    height: 120.62vw;
+    max-height: 120.62vw;
   }
 
   .cruises__content {
